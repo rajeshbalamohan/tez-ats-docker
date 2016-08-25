@@ -9,7 +9,7 @@ RUN tar -zxf jdk-8u102-linux-x64.tar.gz
 ENV JAVA_HOME /usr/local/jdk1.8.0_102
 
 # Install stable zeppelin
-RUN wget http://www-us.apache.org/dist/zeppelin/zeppelin-0.6.0/zeppelin-0.6.0-bin-all.tgz
+RUN wget http://archive.apache.org/dist/zeppelin/zeppelin-0.6.0/zeppelin-0.6.0-bin-all.tgz
 RUN tar -zxf zeppelin-0.6.0-bin-all.tgz
 RUN ln -s /usr/local/zeppelin-0.6.0-bin-all /usr/local/zeppelin
 
