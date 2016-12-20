@@ -7,8 +7,8 @@ Steps to install:
 ================
 1. Install docker
 2. Clone this repository
-3. "docker build -t tez/analyzer:0.1 zeppelin/"
-4. "docker run -p 12000:11000 -v /tmp/docker/conf:/usr/local/zeppelin/conf -v /tmp/docker/logs:/usr/local/zeppelin/logs -v /tmp/docker/dagFiles:/dagFiles -i <IMAGE_ID>"
+3. "sudo docker build -t tez/analyzer:0.1 zeppelin/"
+4. "sudo docker run -p 12000:11000 -v /tmp/docker/conf:/usr/local/zeppelin/conf -v /tmp/docker/logs:/usr/local/zeppelin/logs -v /tmp/docker/dagFiles:/dagFiles -i <IMAGE_ID>"
 where IMAGE_ID is the id generated during the build.  "/tmp/docker" is the place where you cloned this repository. Basically conf, logs, dagFiles are directories
 which can are mapped to local file system.
 5. Place the imported ATS data in dagFiles directory.
